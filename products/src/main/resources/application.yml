@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/productDb
+    username: dekan
+    password: s3cret
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+discount:
+  grpc:
+    host: localhost
+    port: 9092

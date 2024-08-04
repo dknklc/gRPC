@@ -1,0 +1,12 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:54323/discountDb
+    username: user
+    password: s3cret
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

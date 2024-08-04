@@ -19,4 +19,7 @@ public class ProductService {
     public List<Product> getAll() {
         return productRepository.findAll();
     }
+    public Product getById(Long id) {
+        return productRepository.findById(id).orElseThrow(() -> new RuntimeException("Product not found"));
+    }
 }

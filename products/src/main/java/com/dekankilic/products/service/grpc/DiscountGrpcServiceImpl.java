@@ -16,7 +16,6 @@ public class DiscountGrpcServiceImpl implements DiscountGrpcService {
     private ManagedChannel channel; // Karşıda ki servisin hostu ve portu ile bir channel oluşturmamız lazım.
 
     public DiscountGrpcServiceImpl(@Value("${discount.grpc.host}") String grpcHost, @Value("${discount.grpc.port}") int grpcPort) {
-
         channel = ManagedChannelBuilder.forAddress(grpcHost, grpcPort)
                 .usePlaintext()
                 .build();
